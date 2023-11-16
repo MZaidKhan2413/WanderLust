@@ -42,3 +42,11 @@ module.exports.logout = (req, res, next)=>{
         res.redirect("/listings");
     })
 };
+
+module.exports.root = (req, res)=>{
+    if (typeof res.locals.currUser != "undefined"){
+        return res.redirect("/listings");
+    } else {
+        return res.redirect("/login");
+    }
+};

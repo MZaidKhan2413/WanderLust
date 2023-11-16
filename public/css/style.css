@@ -255,9 +255,6 @@ body {
 ======================================== */
 
 @media screen and (max-width: 768px) {
-    html {
-        font-size: 85%;
-    }
 
     .user-col, .show-col{
         width: 80% !important;
@@ -265,12 +262,16 @@ body {
     .user-mb {
         margin-bottom: 2rem !important;
     }
+    .search-form {
+        margin-top: 1rem;
+    }
+    .search-input, .search-btn {
+        border-radius: .5rem;
+    }
     
 }
 @media screen and (max-width: 576px) {
-    html {
-        font-size: 75%;
-    }
+
     .show-col {
         width: 90% !important;
     }
